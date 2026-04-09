@@ -19,7 +19,7 @@ A machine learning pipeline to predict financial health (Low/Medium/High) for sm
 ---
 
 ##  Executive Summary
-![Executive Summary](docs/executive_sumary.png)
+![Executive Summary](docs/executive_sumary1.png)
 
 **Key Finding**: Financial metrics drive health classification, NOT demographics.
 
