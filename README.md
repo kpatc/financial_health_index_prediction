@@ -19,6 +19,7 @@ A machine learning pipeline to predict financial health (Low/Medium/High) for sm
 ---
 
 ##  Executive Summary
+![Executive Summary](docs/executive_sumary.png)
 
 **Key Finding**: Financial metrics drive health classification, NOT demographics.
 
@@ -51,7 +52,7 @@ python modeling/train.py
 # Phase 4: Generate Test Predictions
 python modeling/predict.py
 # Output: test_predictions.csv
-
+```
 ---
 
 ## 📋 Project Structure
@@ -86,7 +87,7 @@ Financial_health_index/
 ├── docs/
     ├── executive_sumary.png     # 6-panel executive summary
     └── bivariate_analysis.png   # Feature vs target analysis
-
+```
 
 ---
 
@@ -265,29 +266,6 @@ ID_XYZ789       | Low        | 0.72     | 0.20        | 0.08
 
 ---
 
-##  Phase 5: Executive Summary
-
-**File**: `reports/executive_summary.ipynb`
-
-Generates a **1-page visual summary** for stakeholders:
-
-![Executive Summary](docs/executive_sumary.png)
-
-**6-Panel Layout**:
-1. **Target Distribution** — Pie chart (65/30/5% imbalance)
-2. **Model Comparison** — F1 scores across 4 algorithms
-3. **Key Metrics** — Best model stats (0.82 F1, 78.7% accuracy)
-4. **Feature Importance** — Top 10 predictors
-5. **Confusion Matrix** — Prediction accuracy by class
-6. **Per-Class Performance** — Precision/recall/F1 breakdown
-7. **Pipeline Strategy** — Cleaning + imbalance handling overview
-8. **Business Impact** — Interpretation for stakeholders
-9. **Recommendations** — Next steps
-
----
-
-
-
 ##  Performance Summary
 
 ### Best Model: Gradient Boosting Classifier
@@ -306,21 +284,6 @@ Generates a **1-page visual summary** for stakeholders:
 | **High** (5%) | 0.49 | 0.52 | 0.50 | 470 | Challenging; minority class signal weak |
 
 **Key Challenge**: Only 470 High-class examples (4.9% of data) → minority class prediction inherently harder, but still better than random (33.3% baseline).
-
-### Top 10 Predictive Features
-
-| Rank | Feature | Importance |
-|------|---------|---|
-| 1 | business_turnover_log | 18% |
-| 2 | personal_income_log | 15% |
-| 3 | business_expenses_log | 12% |
-| 4 | expense_turnover_ratio | 10% |
-| 5 | income_expense_ratio | 9% |
-| 6 | country | 8% |
-| 7 | business_age_years | 7% |
-| 8 | keeps_financial_records | 6% |
-| 9 | has_insurance | 5% |
-| 10 | has_loan_account | 4% |
 
 **Insight**: Financial metrics (features 1-5) = 64% importance. Geographic & behavioral factors secondary.
 
@@ -355,8 +318,6 @@ Generates a **1-page visual summary** for stakeholders:
 
 ---
 
-
----
 
 ##  Dependencies
 
