@@ -44,17 +44,14 @@ MANIFEST
 .DS_Store
 
 # Data
-data/Train.csv
-data/Test.csv
-data/VariableDefinitions.csv
+
 data/cleaned/
 
 # Large model files (optional - uncomment if you want to track)
 # modeling/model.pkl
 # modeling/preprocessor.pkl
 
-# Test outputs
-test_predictions.csv
+
 
 # OS
 .DS_Store

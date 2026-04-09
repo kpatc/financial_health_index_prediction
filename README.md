@@ -30,7 +30,7 @@ A machine learning pipeline to predict financial health (Low/Medium/High) for sm
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Setup Environment
 ```bash
@@ -55,7 +55,7 @@ python modeling/predict.py
 ```
 ---
 
-## 📋 Project Structure
+##  Project Structure
 
 ```
 Financial_health_index/
@@ -289,7 +289,7 @@ ID_XYZ789       | Low        | 0.72     | 0.20        | 0.08
 
 ---
 
-## 💡 Key Insights
+##  Key Insights
 
 ### Data Quality Issues (All Handled in Cleaning)
 - Unicode corruption in categorical columns (zero-width spaces, smart quotes)
